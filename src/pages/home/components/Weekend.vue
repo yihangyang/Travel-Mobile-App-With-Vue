@@ -4,7 +4,7 @@
     <ul>
       <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper"></div>
-        <img class="item-img" src="item.imgUrl" alt="">
+        <img class="item-img" :src="item.imgUrl" alt="">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
@@ -34,8 +34,8 @@ export default {
     height: 0
     padding-bottom: .37.09%
   .item-img
-    width: 1.7rem
-    height: 1.7rem
+    width: 100%
+    height: 2.7rem
     padding: .1rem
   .item-info
     padding: .1rem
